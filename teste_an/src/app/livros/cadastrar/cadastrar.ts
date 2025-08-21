@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class Cadastrar {
 
+nome = 'vitorio'
+caminhoImagem = 'image.png'
+
+sayHi() {
+  
+}
+
 }
