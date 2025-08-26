@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <div class="buttons">
+    <button (click)="toggleStatus()">Alternar</button>
+    <button (click)="plusFont()">+</button>
+    <button (click)="minusFont()">-</button>
+  </div>
+
+  <ul>
+    <li
+      *ngFor="let aluno of listaAlunos"
+      [ngClass]="aluno.status"
+      [ngStyle]="{ 'font-size': tamanhoFonte }"
+    >
+      {{ aluno.id }} - {{ aluno.nome }} - {{ aluno.status }}
+    </li>
+  </ul>
+
+
+</body>
+</html>
+
