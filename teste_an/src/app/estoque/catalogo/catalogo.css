@@ -1,0 +1,38 @@
+.disponivel {
+  color: green;
+}
+
+.indisponivel {
+  color: red;
+  font-style: italic;
+}
+
+table {
+  text-align: center;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+button {
+  background-color: rgb(41, 8, 72);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 5px;
+}
