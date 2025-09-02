@@ -5,23 +5,29 @@
     <th>Estoque</th>
     <th>Status</th>
   </tr>
-  <tr *ngFor="let produto of produtos" [ngClass]="produto.estoque > 0 ? 'disponivel' : 'indisponivel'">
+  <tr
+    *ngFor="let produto of produtos"
+    [ngClass]="produto.estoque > 0 ? 'disponivel' : 'indisponivel'"
+  >
     <td>
       {{ produto.nome }}
     </td>
-    <td [ngStyle]="{color: produto.preco > 2000 ? 'blue' : 'black'}">
+    <td [ngStyle]="{ color: produto.preco > 2000 ? 'blue' : 'black' }">
       {{ produto.preco | currency }}
     </td>
     <td>
       {{ produto.estoque }}
     </td>
-      <td>
-        <span *ngIf="produto.estoque > 0">Disponível</span>
-        <span *ngIf="produto.estoque <= 0">Indisponível</span>
-      </td>
+    <td>
+      <span *ngIf="produto.estoque > 0">Disponível</span>
+      <span *ngIf="produto.estoque <= 0">Indisponível</span>
+    </td>
   </tr>
 </table>
-  <div class="buttons">
-    <button (click)="aumentar()">Preços +10%</button>
-    <button (click)="reduzir()">Preços -10%</button>
-  </div>
+<div class="buttons">
+  <button (click)="aumentar()">Preços +10%</button>
+  <button (click)="reduzir()">Preços -10%</button>
+  <button (click)="aumentarEstoque()">Aumentar Estoque</button>
+  <button (click)="diminuirEstoque()">Diminuir Estoque</button>
+  <input type="text" name="" id="teste" />
+</div>

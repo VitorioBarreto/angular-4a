@@ -1,0 +1,15 @@
+<h1>Listar Usuários</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Cargo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let usuario of usuarios">
+      <td>{{ usuario.nome }}</td>
+      <td>{{ usuario.cargo }}</td>
+    </tr>
+  </tbody>
+</table>

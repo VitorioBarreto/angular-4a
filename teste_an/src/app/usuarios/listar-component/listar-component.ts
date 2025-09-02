@@ -1,0 +1,19 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-listar-component',
+  standalone: false,
+  templateUrl: './listar-component.html',
+  styleUrl: './listar-component.css'
+})
+export class ListarComponent {
+
+  usuarios = [
+    {
+      nome: 'Usuário 1', cargo: 'Cargo 1'
+    },
+    {
+      nome: 'Usuário 2', cargo: 'Cargo 2'
+    }
+  ]
+}

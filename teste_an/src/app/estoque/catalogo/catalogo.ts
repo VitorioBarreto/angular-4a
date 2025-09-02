@@ -9,9 +9,9 @@ import { Component } from '@angular/core';
 export class Catalogo {
 
   produtos = [
-    { nome: 'Produto 1', preco: 10.99, estoque: 5 },
-    { nome: 'Produto 2', preco: 12.99, estoque: 0 },
-    { nome: 'Produto 3', preco: 14.99, estoque: 50 }
+    { nome: 'Notebook', preco: 2399, estoque: 5 },
+    { nome: 'Pão', preco: 30, estoque: 0 },
+    { nome: 'Celular', preco: 14.99, estoque: 50 }
   ];
 
 
@@ -25,6 +25,20 @@ export class Catalogo {
       for (let produto of this.produtos) {
           produto.preco *= 0.9;
       }
+  }
+
+  aumentarEstoque() {
+    for (let produto of this.produtos) {
+      produto.estoque += 1;
+    }
+  }
+
+  diminuirEstoque() {
+    for (let produto of this.produtos) {
+      produto.estoque -= 1;
+    }
+
+  
   }
 
 
