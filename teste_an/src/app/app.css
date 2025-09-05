@@ -1,0 +1,11 @@
+mat-toolbar {
+  background-color: #741a65;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+body {
+  background: linear-gradient(to bottom, #e8bedb56 100%);
+}

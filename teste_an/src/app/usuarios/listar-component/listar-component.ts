@@ -10,10 +10,10 @@ export class ListarComponent {
 
   usuarios = [
     {
-      nome: 'Usuário 1', cargo: 'Cargo 1'
+      nome: 'Lela', cargo: 'Psicóloga'
     },
     {
-      nome: 'Usuário 2', cargo: 'Cargo 2'
+      nome: 'Laiana', cargo: 'Psicóloga'
     }
   ]
 }
