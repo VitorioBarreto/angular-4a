@@ -6,6 +6,7 @@ import { App } from './app';
 import { ProdutosModule } from './produtos/produtos-module';
 import { MatToolbar, MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
+import { MatTableModule } from '@angular/material/table';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { MatIconModule } from "@angular/material/icon";
     AppRoutingModule,
     ProdutosModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule
 ],
   providers: [
     provideBrowserGlobalErrorListeners(),
