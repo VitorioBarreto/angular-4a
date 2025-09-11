@@ -17,11 +17,12 @@ import { MatChipsModule } from '@angular/material/chips';
   imports: [
     CommonModule,
     ProdutosRoutingModule,
-    SharedModule,
     MatToolbar,
     MatIconModule,
     MatCardModule,
     MatChipsModule,
+
+    SharedModule
 ],
   exports: [
     ListaProdutos
