@@ -16,7 +16,10 @@ import { MatTableModule } from '@angular/material/table';
   imports: [
     BrowserModule,
     AppRoutingModule,
+
+    // Importa o módulo de produtos e o mantém por padrão
     ProdutosModule,
+
     MatToolbarModule,
     MatIconModule,
     MatTableModule

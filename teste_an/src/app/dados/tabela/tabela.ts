@@ -9,7 +9,7 @@ import { Produto } from '../modelo/Produto';
 })
 export class Tabela {
 
-  displayedColumns: string[] = ['nome', 'valor'];
+  displayedColumns: string[] = ['nome', 'valor', 'acao'];
 
   dataSource: Produto[] = [
     {name: 'coca', valor: 10},

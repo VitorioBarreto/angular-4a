@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { DadosRoutingModule } from './dados-routing-module';
 import { Tabela } from './tabela/tabela';
 import { MatTableModule } from '@angular/material/table';
+import { Botao } from '../shared/botao/botao';
+import { SharedModule } from '../shared/shared-module';
 
 
 @NgModule({
@@ -13,7 +15,11 @@ import { MatTableModule } from '@angular/material/table';
   imports: [
     CommonModule,
     DadosRoutingModule,
-    MatTableModule
+    MatTableModule,
+
+    SharedModule
+
+
   ]
 })
 export class DadosModule { }
