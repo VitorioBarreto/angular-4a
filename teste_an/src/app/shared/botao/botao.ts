@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-botao',
   standalone: false,
   templateUrl: './botao.html',
-  styleUrl: './botao.css'
+  styleUrl: './botao.css',
 })
 export class Botao {
 onClick() {

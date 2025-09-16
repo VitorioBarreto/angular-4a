@@ -20,7 +20,7 @@ export class ListaProdutos {
       });
   }
   onTopClick() {
-    this.snackBar.open('Então goza na minha boquinha filho da puta', '👍', {
+    this.snackBar.open('Valeu', '👍', {
       duration: 2000,
       horizontalPosition: 'right',
       verticalPosition: 'top'
