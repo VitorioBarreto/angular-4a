@@ -1,0 +1,3 @@
+<p *ngIf="logado">{{ mensagemBv }}</p>
+<p *ngIf="!logado">{{ mensagemDeslog }}</p>
+<button (click)="alterar()">{{ logado ? 'Sair' : 'Entrar' }}</button>

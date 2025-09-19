@@ -31,6 +31,18 @@ const routes: Routes = [
 {
   path: 'dados',
   loadChildren: () => import('./dados/dados-module').then(m => m.DadosModule)
+},
+{
+  path: 'funcionario',
+  loadChildren: () => import('./funcionario/funcionario-routing-module').then(m => m.FuncionarioRoutingModule)
+},
+{
+  path: 'revisao',
+  loadChildren: () => import('./revisao/revisao-routing-module').then(m => m.RevisaoRoutingModule)
+},
+{
+  path: 'listartarefas',
+  loadChildren: () => import('./listar-tarefa/listar-tarefa-module').then(m => m.ListarTarefaModule)
 }
 ];
 
